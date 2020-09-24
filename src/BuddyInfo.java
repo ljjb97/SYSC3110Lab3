@@ -4,14 +4,21 @@ public class BuddyInfo {
         return name;
     }
 
-    private  String name;
+    private String name;
 
-    public BuddyInfo(String name) {
+    public String getAddress() {
+        return address;
+    }
+
+    private String address;
+
+    public BuddyInfo(String name, String address) {
         this.name = name;
+        this.address = address;
     }
 
     public static void main(String[] args) {
-        BuddyInfo x = new BuddyInfo("Liam");
+        BuddyInfo x = new BuddyInfo("Liam", "carleton");
         System.out.println("Hello, " + x.getName());
     }
 }

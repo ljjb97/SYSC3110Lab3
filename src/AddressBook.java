@@ -1,15 +1,14 @@
-import java.util.HashMap;
+import java.util.ArrayList;
 
 public class AddressBook {
-    private HashMap<BuddyInfo, String> book;//book is used to store the address for each buddy
+    private ArrayList<BuddyInfo> book;//book is used to store the known buddys
 
     /**
      *
      * @param buddy the buddy to add
-     * @param address the buddys address
      */
-    public void addBuddy(BuddyInfo buddy, String address) {
-        book.put(buddy, address);
+    public void addBuddy(BuddyInfo buddy) {
+        book.add(buddy);
     }
 
     /**
@@ -21,11 +20,14 @@ public class AddressBook {
     }
 
     public AddressBook() {
-        this.book = new HashMap<BuddyInfo, String>();
+        this.book = new ArrayList<BuddyInfo>();
     }
 
     public static void main(String[] args) {
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton");
         AddressBook x = new AddressBook();
+        x.addBuddy(buddy);
+        x.removeBuddy(buddy);
         System.out.println("Address Book");
     }
 }
