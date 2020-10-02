@@ -18,7 +18,8 @@ public class AddressBook {
     public void removeBuddy(BuddyInfo buddy) {
         book.remove(buddy);
     }
-
+    
+    //I added this comment in github
     public AddressBook() {
         this.book = new ArrayList<BuddyInfo>();
     }
