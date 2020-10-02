@@ -1,7 +1,5 @@
 public class BuddyInfo {
 
-
-
     private String name;
     private String address;
     private String phone;
@@ -30,16 +28,3 @@ public class BuddyInfo {
     }
 }
 
-/*
- 1. External Libraries
-    Scratches and Consoles
-    <project name>
-        .idea
-        src
-        <project name>.iml
-
- 2. Java.base
-    Java.compiler
-    java.desktop
-
- */
