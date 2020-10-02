@@ -1,24 +1,31 @@
 public class BuddyInfo {
 
+
+
+    private String name;
+    private String address;
+    private String phone;
+
     public String getName() {
         return name;
     }
-
-    private String name;
 
     public String getAddress() {
         return address;
     }
 
-    private String address;
+    public String getPhone() {
+        return phone;
+    }
 
-    public BuddyInfo(String name, String address) {
+    public BuddyInfo(String name, String address, String phone) {
         this.name = name;
         this.address = address;
+        this.phone = phone;
     }
 
     public static void main(String[] args) {
-        BuddyInfo x = new BuddyInfo("Liam", "carleton");
+        BuddyInfo x = new BuddyInfo("Liam", "carleton", "613");
         System.out.println("Hello, " + x.getName());
     }
 }
